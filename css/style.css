@@ -1,3 +1,28 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    color: grey;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {}
+
+p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+/*Home Section*/
+
 #preloader {
     background-color: white;
     position: fixed;
@@ -7,30 +32,183 @@
     right: 0;
     z-index: 9999;
 }
-#status{
-     background-image: url("../img/Preloader/cloud.gif");
-    background-size: 90%;
+
+#status {
+    background-image: url("../img/Preloader/cloud.gif");
+    background-size: 100%;
     background-repeat: no-repeat;
-   
+
     width: 500px;
     height: 500px;
     position: absolute;
     left: 35%;
     top: 25%;
-    
+
 }
 
 #bgc {
-    position: absolute;
+    position: fixed;
     left: 50%;
     top: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    height: 50%;
-    width: 30%;
-    
+    background-size: cover;
+    min-height: 100%;
+    min-width: 100%;
+    height: auto;
+    width: auto;
+    z-index: -1;
+    background: url("../video/solo.mp4") no-repeat;
+    background-size: cover
 }
-#bg-over {
-    background-color: black;
-    width: 100%;
+
+#home-overlay {
+    background-color: rgba(0, 0, 0, 0.8);
     height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
+
+
+#home-content-inner {
+    font-family: 'Hind Vadodara', sans-serif;
+    position: fixed;
+    top: 40%;
+    left: 37%;
+}
+
+#home-heading-1 {
+    color: deepskyblue;
+    font-size: 45px;
+    font-weight: 100;
+}
+
+#home-heading-2 {
+    color: white;
+    font-size: 45px;
+    font-weight: 100;
+
+}
+
+#home-heading h1 span {
+    color: #f4c613;
+}
+
+.content-nb {
+    background-color: blue;
+    padding: 5px;
+    font-family: 'Hind Vadodara', sans-serif;
+    font-size: 110%;
+}
+
+.home-bn-img {
+    height: 100px;
+    position: fixed;
+    left: 330px;
+   
+}
+
+.hn a {
+    padding: 10px;
+    margin: 5px;
+}
+.content-bn {
+    height: 100px;
+
+}
+
+.home-bn-h3{
+    color: white;
+    padding: 35px;
+    position: absolute;
+    left: 35%;
+}
+
+
+#home-text p {
+    color: darkorange;
+    font-weight: 100;
+    font-size: 14px;
+    margin: 8px 0 30px 0;
+}
+
+.btn-gen {
+    font-family: 'Hind vadodara', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin: 0 5px;
+    padding: 5px 5px 15px 15px;
+    -webkit-transition: all 0.5;
+    transition: all 0.5;
+}
+
+
+a:hover,
+a:active,
+a:link,
+a:visited {
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    margin-top: -10px;
+    /* for example */
+}
+
+
+
+.btn-home-1:hover,
+btn-hom-1:focus {
+    color: white;
+    background-color: #DD2A7B;
+    border: 3px solid white;
+}
+
+.btn-home-2:hover,
+btn-home-2:focus {
+    color: white;
+    background-color: #0033ff;
+    border: 3px solid white;
+}
+
+.btn-home-3:hover,
+btn-home-3:focus {
+    background-color: #04fb9c;
+    border: 3px solid white;
+}
+
+#arrow-down {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    color: aliceblue;
+    font-size: 40px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    margin-left: -20px;
+    z-index: 1;
+
+}
+
+#arrow-down:hover,
+#arrow-down:focus {
+    color: blue;
+}
+
+/*CSS For About Page*/
+
+.content-box-lg {
+    padding: 120px;
+}
+
+.vertical-heading h4 {
+    color: red;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+
 }
